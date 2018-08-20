@@ -1,0 +1,23 @@
+<h3>Birth Day Student Today</h3>
+<div *ngFor="let x of BirthDayStudentToday" style="display:inline-block;padding:10px">
+    <div>{{x.StName}}</div>
+    <div>{{x.Class}}</div>
+    <div>{{x.StDOB}}</div>
+    <div>{{x.BirthDate}}</div>
+    <div><img src="{{x.Photo}}" alt=""/></div>    
+</div>
+<h3>Birth Day Teacher Today</h3>
+<div *ngFor="let x of BirthDayTeacherToday" style="display:inline-block;padding:10px">
+    <div>{{x.StName}}</div>
+    <div>{{x.Class}}</div>
+    <div>{{x.StDOB}}</div>
+    <div>{{x.BirthDate}}</div>
+    <div><img src="{{x.Photo}}" alt="" /></div>
+</div>
+<h3>Birth Day Teacher of Month</h3>
+<div *ngFor="let x of BirthDayTeacherofMonth" style="display:inline-block;padding:10px">
+    <div>{{x.FirstName}}</div>
+    <div>{{x.DOB}}</div>
+    <div>{{x.BirthDate}}</div>    
+    <div><img src="{{x.Photo}}" alt="" /></div>
+</div>

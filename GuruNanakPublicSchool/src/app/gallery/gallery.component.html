@@ -1,0 +1,55 @@
+<input type="button" value="click" (click)="loadImg(2)"/>
+
+<!-- Photo Gallery -->
+<section class="why-chose-us tc-padding">
+    <div class="container">
+
+        <!-- Main Heading -->
+        <div class="main-heading-holder">
+            <div class="main-heading p-b-0  h-white p-white">
+                <h2>Photo Gallery</h2>
+
+            </div>
+
+        </div>
+
+        <div class="courses-slider-3">
+            
+            <!-- Courses Column-->
+            {{errorMsg}}
+                <div class="item" *ngFor="let x of gallery">
+                    <div class="course-column tc-hover">
+                        <div class="course-img">
+                            <img src="http://webapi.palmboard.in//SchImg/FSPSGN/PhotoAlbum/Thumb/{{x.FileName}}" alt="">
+                        </div>
+                        <div class="course-detail">
+                            <span class="date"><i class="fa fa-calendar"></i>{{x.EventDate}}</span>
+                            <h3><a href="#">{{x.Description}}</a></h3>
+                            <p>{{x.Title}}</p>
+                            <a class="btn blue sm" href="#">Apply<i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<!-- Photo Gallery -->
+<style>
+    .why-chose-us .owl-carousel .owl-item, .why-chose-us .owl-carousel .item,.why-chose-us .owl-carousel .course-column {
+        height:450px;
+    }
+    .owl-carousel .course-img {
+        height:150px;
+    }
+    .owl-carousel .course-detail {
+        height:300px;
+        overflow: auto;
+    }
+    .owl-carousel .course-img {
+        overflow:hidden
+    }
+    .owl-carousel .course-img img {
+        width:100%;
+        height:auto;
+    }
+</style>

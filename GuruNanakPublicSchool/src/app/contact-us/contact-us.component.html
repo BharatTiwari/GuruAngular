@@ -1,0 +1,26 @@
+<div id="pac-input" style="width:100%;height:500px"></div>
+
+<div class="container">
+    <form #contactUs="ngForm" (ngSubmit)="submitForm()">
+        <input required name="name" #name="ngModel" [(ngModel)]="userModel.name" type="text" id="name" placeholder="Name *"
+               [class.is-invalid]="name.invalid && name.touched" />
+        <span class="text-danger" [class.d-none]="name.valid || name.untouched">Enter Name</span>        
+        <input required name="address" #address="ngModel" [(ngModel)]="userModel.address" type="text" id="address" placeholder="Address *"
+               [class.is-invalid]="address.invalid && address.touched" />
+        <span class="text-danger" [class.d-none]="address.valid || address.untouched">Enter Address</span>        
+        <input required name="mobileno" #mobileno="ngModel" [(ngModel)]="userModel.mobileno" type="tel" id="mobileno" placeholder="Mobile No *"
+               [class.is-invalid]="mobileno.invalid && mobileno.touched" />
+        <span class="text-danger" [class.d-none]="mobileno.valid || mobileno.untouched">Enter Mobile No</span>        
+        <input required name="email" #email="ngModel" [(ngModel)]="userModel.email" type="email" id="email" placeholder="Email Id *"
+               [class.is-invalid]="email.invalid && email.touched" />
+        <span class="text-danger" [class.d-none]="email.valid || email.untouched">Enter Email Id</span>        
+        <input required name="subject" #subject="ngModel" [(ngModel)]="userModel.subject" type="text" id="subject" placeholder="Subject *"
+               [class.is-invalid]="subject.invalid && subject.touched" />
+        <span class="text-danger" [class.d-none]="subject.valid || subject.untouched">Enter Subject</span>        
+        <textarea required name="message" #message="ngModel" [(ngModel)]="userModel.message" type="text" id="message" placeholder="Message *"
+               [class.is-invalid]="message.invalid && message.touched" ></textarea>
+        <span class="text-danger" [class.d-none]="message.valid || message.untouched">Write message</span>        
+
+        <button [disabled]="contactUs.form.invalid" (click)="submitForm()" >Submit</button>
+    </form>
+</div>

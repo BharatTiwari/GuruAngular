@@ -1,0 +1,74 @@
+
+<!--<input type="text" [(ngModel)]="queryString" id="search" placeholder="Search to type">
+<ul>
+    <li *ngFor="let n of list | FilterPipe2: queryString : searchableList ">
+        {{n.name}} ({{n.age}})
+    </li>
+</ul>-->
+
+
+<section class="comming-events tc-padding gray-bg">
+    <div class="container">
+        <!-- Main Heading -->
+        <div class="main-heading-holder">
+            <div class="main-heading" style="clear: both;width: 100%;">
+                <h2>News Notice</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing aelit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+        <!-- Main Heading -->
+        
+        {{errorMsg}}
+        <div class="blog-slider">
+            
+            <div class="item" *ngFor="let x of newsNotices">
+                <div class="blog-column z-depth-2">
+                    <div class="img-box">
+                        <img src="http://www.stkarensprimaryschool.com//ImageGallery/full/{{x.IconImg}}" alt="">
+                    </div>
+                    <div class="blog-detail">
+                        <ul class="meta-post">
+                            <li><i class="fa fa-calendar"></i>July 28, 2018</li>
+                            <!--<li><i class="fa fa-user"></i>Aaron Dzoan</li>-->
+                        </ul>
+                        <h3>{{x.ActivityTitle}}</h3>
+                        <p>Date : {{x.Date}}</p>
+                        <p>Day : {{x.Day}}</p>
+                        <p>DayName : {{x.DayName}}</p>
+                        <p>DayType : {{x.DayType}}</p>
+                        <p>Event : {{x.Event}}</p>
+                        <p>MonthName : {{x.MonthName}}</p>
+                        <div>YrId : {{x.YrId}}</div>
+                        <div class="blog-detail-btm">
+                            <a class="btn blue sm" href="#">Read more<i class="fa fa-angle-right"></i></a>
+                        
+                        </div>
+                        <!--	<a class="circle-btn" href="#"><i class="fa fa-graduation-cap"></i></a>-->
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Blog Column -->
+        </div>
+        <!-- Blog -->
+
+    </div>
+</section>
+<!-- From The Blog -->
+<style>
+    .comming-events .owl-carousel .owl-item, .comming-events .item, .comming-events .item .blog-column {        
+        height: 600px;
+    }
+    .comming-events .owl-carousel .blog-detail {
+        height:300px;
+        overflow:auto
+    }
+    .comming-events .img-box {
+        height: 300px;
+        overflow: hidden;
+    }
+    .owl-controls {
+        display:none;
+    }
+</style>

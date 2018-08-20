@@ -1,0 +1,58 @@
+<div class="headingI">
+    Galler heading....(title)
+</div>
+
+<div class="inner_img">
+    <div class="newGallery">
+        <ul class="pgBack">
+            <li class="eventDates">
+                <b>Event Date:</b>
+                21-Jul-2018
+            </li>
+            <li class="updatedOnD">
+                <b>Updated On:</b>
+                21-Jul-2018
+            </li>
+            <li class="totalImages">
+                <b>Total Photo(s)</b>
+                9
+            </li>
+            <li class="changeAlbums chAl">
+                <a href="default.aspx">&lt;&lt; Change Album</a>
+            </li>
+        </ul>
+        <div class="fullDescription">
+            <span class="DescriptionH">Description: </span>
+            <span id="ctl00_ContentPlaceHolder1_lblDescription">NASA trip</span>
+        </div>
+    </div>
+</div>
+
+<main class="main-content">
+    <div id="filter-masonry" class="gallery-masonry">
+        <div class="masonry-grid col-sm-2 col-xs-6 p-0 classes" *ngFor="let x of images">
+            <figure class="gallery-figure">
+                <img src="{{galleryImg}}{{x.Photopath}}" alt="">
+                <figcaption class="overlay">
+                    <a class="circle-btn position-center-center" href="http://www.stkarensprimaryschool.com//ImageGallery/Full/{{x.Photopath}}" data-rel="prettyPhoto[gallery]">+</a>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="pageLoaders">
+        <div class="pgImgLoad text-center">
+            <img id="loader" alt="" src="/assets/images/bx_loader.gif" style="display:none">
+        </div>
+        <div id="loadmore" style="">Load More</div>
+    </div>
+
+</main>
+
+<style>
+    .masonry-grid {
+        display:inline-block;
+        float:left;
+        height: 150px;
+        overflow: hidden;        
+    }
+</style>

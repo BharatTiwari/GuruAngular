@@ -1,0 +1,334 @@
+p {
+  font-family: Lato;
+}
+.search-results {
+  height: 100%;
+}
+.title {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-70%);
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  width: 100%;
+}
+.title small {
+  color: #eaeaea;
+}
+
+* {
+    outline: none;
+}
+*, :before, :after {
+    box-sizing: border-box;
+}
+ul, ol, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.photo_gn1 {
+    width: 100%;
+    max-width: 1226px;
+    float: left;
+}
+.photo_gn1 li {
+    max-width: 320px;
+    margin: 0px 45px 40px 0px;
+    float: left;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.photo_gn1 li .eh2a {
+    display: block;
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 100%;
+}
+.photo_gn1 li .eh2a > div {
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+.thum_first {
+    height: 200px;
+    overflow: hidden;
+    text-align: center !important;
+    position: relative;
+    z-index: 1;
+}
+.albumiconphoto {
+    display: block;
+    max-width: 280px;
+    max-height: 187px;
+    margin: 0 auto;
+    border: 2px solid #bfbfbf;
+    background: #ccc;
+    width: 100%;
+    height: 199px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+.photo_gn1 li .eh2a img {
+    max-width: 100%;
+   }
+
+   .pg_texta {
+    width: 100%;
+    text-align: left;
+    float: left;
+    padding: 117px 20px 10px 20px;
+    background: #ebebeb;
+    margin-top: -109px;
+    position: relative;
+}
+.galbumnamen {
+    font-size: 16px;
+    color: #545454;
+    font-weight: 400;
+    text-transform: capitalize;
+    min-height: 30px;
+}
+.gdateofcreationn {
+    float: left;
+    color: #545454;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 3px 0;
+}
+.evcolorn {
+    color: #9b9b9b;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    min-width: 84px;
+}
+.semi_mg {
+    display: inline-block;
+    min-width: 10px;
+}
+.gdataofaccessn, .gtotalrecordn, .gtotalrecordn {
+    float: right;
+    color: #545454;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.viewallthumb {
+    height: 40px;
+    width: 40px !important;
+    float: right !important;
+    position: relative;
+    margin-top: -40px;
+}
+
+.viewallthumb > a {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    /*background: #cecece url(http://kindergarten.lfconventschoolsangrur.org/images/viewThumbArrow.png) no-repeat center center;*/
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.masterdata {
+    float: left;
+    width: 100%;
+    max-width: 1150px;
+    float: right;
+    min-height: 450px;
+    margin: 60px 0;
+    color: #545454;
+    padding-bottom: 70px;
+    line-height: 24px;
+}
+#dvcustomers .eh1a {
+    float: left;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.photo_gn1 li img {
+    max-width: 100%;
+    text-align:center;
+  }
+.photo_gn1 li:nth-child(3n+0) {
+    margin: 0px 0px 40px 0px;
+}
+/* ---------------form search -------------------*/
+
+.gallery-searchA {
+    width: 100%;
+    width: 100%;
+    float: none;
+    text-align: center;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.galleryInputBlock {
+    float: left;
+    width: 100%;
+    max-width: 1030px;
+    border: 1px solid #dfdfdf;
+    background: #f3f3f4;
+}
+
+.gallery-searchA li:first-child {
+    padding-left: 30px;
+}
+
+.gallery-searchA li {
+    line-height: 40px;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    color: #7c7c7c;
+    font-weight: 400;
+     padding: 1px 0 0px 3%;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ffcc00;
+    border-radius: 50%;
+    outline: none;
+    margin: 3px 4px -1px 0px;
+    padding: 0px 1px 0px 1px;
+}
+
+.gallery-searchA ul li input[type='radio'] {
+    -webkit-appearance: none;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #d4d3d3;
+    border-radius: 50%;
+    outline: none;
+    background: #fff;
+}
+
+.gallery-searchA .lastli {
+    margin-top: 6px;
+    float: right;
+    margin-right: 6px;
+}
+
+.gallery-searchA .lastli > div {
+    float: left;
+}
+
+ .searchfield {
+    width: 350px;
+    border: 1px solid #dfdfdf;
+    outline: none;
+    line-height: 20px;
+     height: 38px; 
+    padding: 0px 5px 0px 5px;
+    background: #fff;
+    /* display: block; */
+    font: 400 12px/20px 'Roboto Slab';
+    min-width: 157px;
+    height: 28px;
+    background: #fff right 5px center no-repeat;
+}
+
+.tempData{
+    border: 1px solid red; display:block; float: left; width: 100%;
+}
+
+.galleryButton {float: right; width: 100%; max-width: 120px; margin-top: 4px;}
+ .searchbutton {color: #fff; font-size: 12px; height: 39px; line-height: 39px; width: 100px;
+    border: none; background: #43b14b;font-weight: 400;float: right;font-style: italic;text-align: center;
+    font-family: 'Roboto Slab'; border-radius: 10px;
+}
+
+ .heder_Center {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+ .newGallery {
+    width: 100%;
+    float: left;
+    font-family: 'Roboto Slab';
+}
+
+ .highslide img {border: 0px solid #bd2151;}
+.pgThumbView1 {width: 100%;    float: left;    margin-top: 5px;}
+.pgThumbView1 ul { width:100%; float:left; text-align:center;}
+.pgThumbView1 li {margin: 0px 33px 33px 0px; max-width: 262px;width:100%;float:left;overflow:hidden; background: #ebebeb;}
+.pgThumbView1 li:nth-child(4n+0) {margin: 0px 0px 33px 0px;}
+.viewAllThumb{ height: 40px; width: 40px !important; float: right !important; position: relative; margin-top: -40px;}
+.viewAllThumb > a{ text-align: center;width: 100%;height: 100%;display: block; 
+                   /*background: #cecece url(../images/viewThumbArrow.png) no-repeat center center;*/ 
+                      transition: all 0.3s ease-in-out;}
+.viewAllThumb > a:hover{
+    /*background:#2553a8 url(../images/viewThumbArrow.png) no-repeat center center;*/
+
+}
+
+.pgThumbView1 li a {height: auto;overflow:hidden;display:block;}
+.pgThumbView1 li a img {max-width: 100%;height: 175px; /*border: 1px solid #0f3b7c;*/}
+#ctl00_head_lblHeading { color:#fff}
+.pgBack { width:100%; float:left; border-bottom:1px solid #d7d4c9; padding: 0px 0px 10px 0px;  margin-bottom: 20px;}
+.pgBack li {display:inline-block;width: 25%;float: left;color:#333333;font-size: 15px;font-style: italic;padding: 0px 10px;}
+.pgBack,.DescriptionH{font-weight: 600;color: #4c4c4c; font-style: italic;}
+.changeAlbums a{transition:all ease 0.3s;font-weight: 400;color: #fff;
+                 /*background: #43b14b url(/images/backAlbumb.png) no-repeat 16px;*/
+                  padding:8px 14px; text-align: right; width: 161px; height: 40px; display: inline-block; letter-spacing: -0.20px; font-style: normal;}
+.changeAlbums a:hover{
+    /*background: #2553a8 url(/images/backAlbumb.png) no-repeat 10px;*/ 
+
+}
+.eventDates,.updatedOnD,.totalImages{ font-weight:400; line-height: 38px;}
+.pgBack .eventDates span{font-weight: 600;color: #333333; font-style: normal;}
+.pgBack .updatedOnD span{font-weight: 600;color: #333333; font-style: normal;}
+.pgBack .totalImages { text-align:right}
+.pgBack .totalImages #ctl00_ContentPlaceHolder1_lblTotal{text-align:right;font-weight: 600;}
+.fullDescription {width:100%;float:left;font-size: 15px;margin-bottom:40px; line-height: 22px;}
+.thumGhide{width: 128px;height: 28px;bottom:12px; left: 0px;cursor: pointer;
+           /*background: url(/images/showAlbum.png) bottom left no-repeat;*/
+           float: left;position: absolute;z-index: 9;}
+.thumVideo {bottom:0px;left:0px;}
+.showHide { visibility:hidden; opacity:0; height:0px;}
+.btn_show { visibility:visible; opacity:1; height:auto; min-height:66px; }
+.aa { 
+    /*background: url(/images/showAlbum.png) top left no-repeat;*/
+
+}
+.Album_thum{color: #333333;float:left;width:100%;padding: 0px 0px 32px 0px; margin: 0 0 10px 0;font-size:22px; text-align:center; font-weight: 600;text-transform:capitalize; font-style: italic; letter-spacing: -0.20px; border-bottom: 1px solid #ccc;}
+span#ctl00_ContentPlaceHolder1_lblHeading{color: #333333; font-weight: 400;}
+.pageLoaders { width:100%; float:left; text-align:center; min-height:61px;}
+#loadmore {display: inline-block;background: #43b14b; margin: 25px 0 18px 0; color: #ffffff; padding: 0px 20px;font-weight: 400; cursor: pointer;border-radius: 10px; transition: all ease 0.3s; font-style: italic; position: relative; top: -21px; height: 40px; line-height: 40px;}
+#loadmore:hover {background: #2553a8; color: #fefefe; /*border: 1px solid #ccc;*/}
+.pgImgLoad { width:100%; float:left; text-align:center; height:32px;}
+.video-img{display: block;overflow: hidden;	height: 200px; position: relative; z-index: 1;}
+.AlbumIconPhoto{display: block;overflow: hidden;height: 184px; max-width: 280px; max-height: 187px;  margin: 0 auto; border: 2px solid #bfbfbf; background:#ccc;}
+.display_p {height: 175px;overflow: hidden;float: left;/*border: 1px solid #fbcd06; background: #fbcd06;*/}
+.thum_first {height: 200px;overflow: hidden;text-align: center !important; position: relative; z-index: 1;}
+
+
+input[type='radio'] {  -webkit-appearance: none;  width: 11px;  height: 11px;  border: 1px solid #ffcc00;  border-radius: 50%; outline: none;  margin: 3px 4px -1px 0px;  padding: 0px 1px 0px 1px;}
+input[type='radio']:checked:before {  background: #d4d3d3;}
+
+
+
+
+ul.gallery-search1 li input[type='radio']:before { content: ''; display: block; width: 5px;  height: 5px;  border-radius: 50%;}
+
+.gallery-searchA ul li input[type='radio'] { -webkit-appearance: none; width: 11px;  height: 11px; border: 1px solid #d4d3d3; border-radius: 50%; outline: none; background: #fff;}
+.gallery-searchA ul li input[type='radio']:checked:before { background: #d4d3d3;}
+input[type='radio']:before { content: ''; display: block; width: 9px; height: 9px;  border-radius: 50%; margin: 0px 0px 0px -1px;}
+.galleryInputBlock{ float:left; width:100%; max-width:1030px; border:1px solid #dfdfdf; background:#f3f3f4;}
+.galleryButton{ float:right;width:100%; max-width:120px;}
+.w88{ min-width:88px; display:inline-block;}
+.w88 + span{ padding-left:6px;}
+.highslide-viewport-size{ bottom:0;}

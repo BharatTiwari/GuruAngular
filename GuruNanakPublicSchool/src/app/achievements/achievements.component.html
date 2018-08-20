@@ -1,0 +1,120 @@
+<main class="main-content">
+    <div class="heder_Center">
+        <div class="gallery-searchA">
+            <div class="galleryInputBlock">
+                <form #searchForm="ngForm">
+                    <ul>
+                        <li>
+                            <label><input [(ngModel)]="searchBy" #all="ngModel" type="radio" name="searchBy" value="1">All Search</label>
+                        </li>
+                        <li>
+                            <label><input [(ngModel)]="searchBy" #Album="ngModel" type="radio" name="searchBy" value="2">Album Title </label>
+                        </li>
+                        <li>
+                            <label><input [(ngModel)]="searchBy" #Year="ngModel" type="radio" name="searchBy" value="3">Year </label>
+                        </li>
+                        <li>
+                            <label><input [(ngModel)]="searchBy" #Event="ngModel" type="radio" name="searchBy" value="4">Event Date </label>
+                        </li>
+                        <li>
+                            <label><input [(ngModel)]="searchBy" #Description="ngModel" type="radio" name="searchBy" value="5">Description </label>
+                        </li>
+                        <li class="lastli mLeft">
+                            <input *ngIf="searchBy == '1'" type="text" name="type" [(ngModel)]="allSearch" class="searchfield" placeholder="All Search" />
+                            <input *ngIf="searchBy == '2'" type="text" name="Album2" [(ngModel)]="AlbumTitle" class="searchfield" placeholder="Album Title" />
+
+                            <select *ngIf="searchBy == '3'" class="searchfield" [(ngModel)]="year" name="years">
+                                <option value="">Select</option>
+                                <option *ngFor="let x of years" value="{{x.Year}}"> {{x.Year}} </option>
+                            </select>
+
+                            <input *ngIf="searchBy == '4'" type="text" bsDatepicker name="eventDate" [(ngModel)]="eventDate" class="searchfield" placeholder="Event Date" />
+                            <input *ngIf="searchBy == '5'" type="text" name="Description" [(ngModel)]="Descriptions" class="searchfield" placeholder="Description" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <div class="galleryButton">
+                <input type="button" (click)="searchAlbum()" class="searchbutton" value="Search / Go" />
+            </div>
+            Total Achievements : {{TotalAchievements}}
+        </div>
+        <div>
+            
+                <div class="thum_first">
+                    <span class="albumiconphoto">
+                        <!--<img src="http://www.dpsjankipuram.com//Achievements/Full/{{detailedAchievement.Image}}" alt="{{x.Image}}" />-->
+                    </span>
+                </div>
+                <div class="pg_texta">
+                    <div class="galbumnamen">
+                        <span class="albumnameclass">{{detailedAchievement.EventVenue}}</span>
+                    </div>
+                    <div><p>{{detailedAchievement.Description}}</p></div>
+                    <div class="gdateofcreationn">
+                        <span class="evcolorn">event date</span> <span class="semi_mg"> : </span>
+                        <span class="dataofaccess">{{detailedAchievement.EventDate}}</span>
+                    </div>
+                    <div class="gdataofaccessn">
+                        <span class="evcolorn">updated on</span> <span class="semi_mg"> : </span>
+                        <span class="dateofcreation">{{detailedAchievement.EventVenue}}</span>
+                    </div>
+                    <div class="gtotalrecordn">
+                        <span class="evcolorn">total photos</span> <span class="semi_mg"> : </span>
+                        <span class="totlphoto">{{detailedAchievement.RowNum}} </span>
+                    </div>
+
+                </div>
+           
+        </div>
+        <div class="masterdata">
+            {{errorMsg}}
+            <ul id="dvcustomers" class="photo_gn1">
+
+                <li class="eh1a" *ngFor="let x of achievements" (click)="getDetail(x.AId)">
+                    <span href='#' class="eh2a">
+                        <div class="thum_first">
+                            <span class="albumiconphoto" >
+                                <img src="http://www.stkarensprimaryschool.com//Achievements/Full/{{x.Image}}" alt="{{x.Image}}" />
+                            </span>
+                        </div>
+                        <div class="pg_texta">
+                            <div class="galbumnamen">
+                                <span class="albumnameclass">{{x.Event}}</span>
+                            </div>
+                            <div><p>{{x.Description}}</p></div>
+                            <div class="gdateofcreationn">
+                                <span class="evcolorn">event date</span> <span class="semi_mg"> : </span>
+                                <span class="dataofaccess">{{x.EventDate}}</span>
+                            </div>
+                            <div class="gdataofaccessn">
+                                <span class="evcolorn">updated on</span> <span class="semi_mg"> : </span>
+                                <span class="dateofcreation">{{x.EventVenue}}</span>
+                            </div>
+                            <div class="gtotalrecordn">
+                                <span class="evcolorn">total photos</span> <span class="semi_mg"> : </span>
+                                <span class="totlphoto">{{x.RowNum}} {{x.AId}}</span>
+                            </div>
+
+                        </div>
+                        <div class="viewallthumb">
+                            <a href="DisplayPhotosFull.html" class="eh2a1">  </a>
+                        </div>
+                    </span>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+        <hr />
+        <div class="pageLoaders">
+            <div class="pgImgLoad text-center">
+                <img id="loader" alt="" src="/assets/images/bx_loader.gif" style="display:none">
+            </div>
+            <div id="loadmore" style="">Load More</div>
+        </div>
+    </div>
+</main>
